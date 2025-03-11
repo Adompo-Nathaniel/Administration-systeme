@@ -1,0 +1,250 @@
+    1  ls
+    2  chmod 644 ~/public_html/images/*.jpg
+    3  ls
+    4  usermod -aG ubuntu -w -data
+    5  usermod -aG ubuntu www-data
+    6  sudo usermod -aG ubuntu www-data -ag ubuntu www-data
+    7  sudo sudo usermod -aG ubuntu www-data -ag ubuntu www-data
+    8  usermod -aG ubuntu www-data
+    9  sudo usermod -aG ubuntu www-data
+   10  ls 
+   11  cd public_html/
+   12  ls
+   13  php hash.php
+   14  sudo nano /etc/rsyslog.conf 
+   15  sudo nano /etc/rsyslog.d/apache.conf
+   16  cd /etc/rsyslog.d
+   17  ls
+   18  sudo nano 50-default.conf 
+   19  sudo nano apache.conf
+   20  ls
+   21  sudo systemctl restart rsyslog
+   22  sudo systemctl statut rsyslog
+   23  sudo systemctl status rsyslog
+   24  sudo nano /etc/hostname 
+   25  hostnamectl
+   26  sudo nano /etc/hosts 
+   27  sudo systemctl restart rsyslog
+   28  sudo systemctl status rsyslog
+   29  sudo systemctl restart systemd-hostnamed
+   30  sudo systemctl status systemd-hostnamed
+   31  sudo nano hostname set-hostname
+   32  sudo hostname set-hostname Nathaniel
+   33  sudo hostnamectl set-hostname Nathaniel
+   34  sudo systemctl restart systemd-hostnamed
+   35  sudo systemctl status systemd-hostnamed
+   36  clear
+   37  ip a
+   38  curl http://localhost
+   39  logger "Du texte de logs"
+   40  cd /var/log/
+   41  ls
+   42  sudo nano syslog
+   43  sudo -s
+   44  mysql
+   45  sudo systemctl status mysql
+   46  sudo systemctl restart mysql
+   47  sudo systemctl status mysql
+   48  sudo -s
+   49  sudo nano /etc/zabbix/zabbix_server.conf 
+   50  systemctl restart zabbix-server zabbix-agent apache2
+   51  systemctl restart zabbix-server zabbix-agent apache2~
+   52  systemctl restart zabbix-server zabbix-agent apache2
+   53  sudo systemctl restart zabbix-server zabbix-agent apache2
+   54  sudo systemctl enable zabbix-server zabbix-agent apache2
+   55  sudo systemctl status zabbix-server zabbix-agent apache2
+   56  mysql
+   57  mysql -uroot -p
+   58  sudo -s
+   59  ip a
+   60  exit
+   61  sudo firewall-cmd --add-port=514/tcp --permanent
+   62  exit
+   63  sudo -s
+   64  exit
+   65  clear
+   66  ssh-keygen -t ed25519 -f /home/ubuntu/.ssh/id_ed25519 -N ""
+   67  ls -l /home/ubuntu/.ssh/
+   68  cat /home/ubuntu/.ssh/id_ed25519.pub 
+   69  ssh userfortp5@10.11.29.56
+   70  ls
+   71  cd /
+   72  ls
+   73  cd home/
+   74  ls
+   75  cd ubuntu/
+   76  ls
+   77  ssh userfortp5@10.11.29.56
+   78  clear
+   79  ssh userfortp5@10.11.29.56
+   80  clear
+   81  ssh userfortp5@10.11.29.56
+   82  chmod 700 ~/.ssh
+   83  chmod 600 ~/.ssh/authorized_keys
+   84  clear
+   85  ssh userfortp5@10.11.29.56
+   86  cd /home/ubuntu/
+   87  ls
+   88  cd /home/ubuntu/
+   89  cd /
+   90  cd /home/ubuntu/
+   91  cd home/ubuntu/
+   92  ls
+   93  cd /
+   94  ls
+   95  cd home/ubuntu/
+   96  ls
+   97  ls /home/ubuntu/.ssh/
+   98  ls /home/ubuntu/.ssh/id_ed25519
+   99  cat /home/ubuntu/.ssh/
+  100  cat /home/ubuntu/.ssh
+  101  ls -l /home/ubuntu/.ssh/
+  102  sudo nano  /home/ubuntu/.ssh/id_ed25519.pub 
+  103  ssh-copy-id userfortp5@10.11.29.56
+  104  ssh userfortp5@10.11.29.56
+  105  ssh ubuntu@10.11.29.53
+  106  ssh userfortp5@10.11.29.56
+  107  clear
+  108  ssh ubuntu@10.11.29.53
+  109  ssh userfortp5@10.11.29.56
+  110  ls
+  111  cd /etc/rsyslog.d/
+  112  ls
+  113  cd 
+  114  cd /etc/
+  115  ls
+  116  cd 
+  117  cd /var/
+  118  ls
+  119  cd lo
+  120  cd log/
+  121  ls
+  122  cd
+  123  ls -ld /var/log/remote/centos/
+  124  tail -f /var/log/remote/centos/*.log
+  125  cd /var/log/remote/centos/
+  126  ls
+  127  sudo cat systemd.log 
+  128  clear
+  129  sudo cat systemd.log 
+  130  clear
+  131  cd ..
+  132  sudo tcpdump -i any port 514 -nn
+  133  ls -l /var/log/remote/
+  134  tail -f /var/log/remote/<hostname>/*.log
+  135  tail -f /var/log/remote/centos/*.log
+  136  ls
+  137  cd centos/
+  138  ls
+  139  sudo cat centos.log 
+  140  cd ..
+  141  cd rocky
+  142  ls
+  143  tail -f *.log
+  144  clear
+  145  cd ..
+  146  ls
+  147  sudo cat rocky-ssh.log 
+  148  ls
+  149  cd rocky
+  150  ls
+  151  sudo nano root.log 
+  152  sudo nano /etc/rsyslog.d/20-remote-ssh.conf 
+  153  ls
+  154  cd ..
+  155  ls
+  156  sudo nano rocky-ssh.log 
+  157  cd rocky
+  158  ls
+  159  sudo cat root.log 
+  160  cd
+  161  sudo systemctl status zabbix
+  162  sudo systemctl status zabbix-server zabbix-aggent apache2
+  163  sudo systemctl status zabbix-server 
+  164  dpkg -l | grep zabbix
+  165  sudo apt update
+  166  sudo apt install zabbix-frontend-php zabbix-apache-conf
+  167  ls /etc/apache2/conf-available/ | grep zabbix
+  168  sudo a2enconf zabbix.conf
+  169  sudo systemctl reload apache2
+  170  sudo systemctl restart apache2
+  171  ls /usr/share/zabbix
+  172  sudo mysql -u root -p
+  173  systemctl status zabbix-server
+  174  systemctl restart zabbix-server
+  175  tail -f /var/log/zabbix/zabbix_server.log
+  176  systemctl status mariadb
+  177  sudo mysql -u root -p
+  178  mysqldump -u root -p zabbix > sauvegarde_zabbix.sqlsud
+  179  sudo mysqldump -u root -p zabbix > sauvegarde_zabbix.sqlsud
+  180  sudo systemctl stop zabbix-server zabbix-agent apache2
+  181  sudo apt remove --purge zabbix-server-mysql zabbix-frontend-php zabbix-agent
+  182  sudo apt autoremove
+  183  sudo rm -rf /etc/zabbix /var/lib/mysql/zabbix /var/log/zabbix /var/lib/zabbix
+  184  wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+  185  sudo dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+  186  sudo apt update
+  187  sudo apt install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent mariadb-server
+  188  sudo rm -f /etc/apt/sources.list.d/zabbix.list
+  189  sudo apt update
+  190  wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu24.04_all.deb
+  191  sudo dpkg -i zabbix-release_6.4-1+ubuntu24.04_all.deb
+  192  sudo apt update
+  193  sudo apt install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent mariadb-server
+  194  CLEAR
+  195  clear
+  196  cat /etc/apt/sources.list.d/zabbix.list
+  197  sudo apt update && sudo apt list --upgradable
+  198  sudo -s 
+  199  mysql -uroot -p
+  200  sudo mysql -u root -p
+  201  ls
+  202  sudo nano /etc/zabbix/zabbix_server.conf 
+  203  systemctl restart zabbix-server zabbix-agent apache2
+  204  sudo systemctl status zabbix-server.service
+  205  sudo systemctl start zabbix-server.service
+  206  sudo systemctl restart zabbix-server zabbix-agent apache2
+  207  clear
+  208  sudo journalctl -xeu zabbix-server.service
+  209  sudo nano /etc/zabbix/zabbix_server.conf
+  210  GRANT ALL PRIVILEGES ON zabbix.* TO 'zabbix'@'localhost' IDENTIFIED BY '12Topinanpours';
+  211  sudo mysql -u root -p
+  212  sudo systemctl restart mariadb
+  213  sudo nano /etc/zabbix/zabbix_server.conf
+  214  sudo systemctl restart mariadb
+  215  sudo tail -n 50 /var/log/zabbix/zabbix_server.log
+  216  sudo systemctl stop zabbix-server
+  217  sudo systemctl start zabbix-server
+  218  sudo systemctl daemon-reexec
+  219  sudo systemctl restart zabbix-server
+  220  sudo mysql -u root -p
+  221  zcat /usr/share/zabbix-server-mysql/schema.sql.gz | sudo mysql -u root -p zabbix
+  222  sudo zcat /usr/share/zabbix-server-mysql/schema.sql.gz | sudo mysql -u root -p zabbix
+  223  sudo systemctl restart zabbix-server
+  224  sudo systemctl status zabbix-server
+  225  sudo tail -f /var/log/zabbix/zabbix_server.log
+  226  dpkg -L zabbix-server-mysql | grep schema.sql.gz
+  227  find /usr/share -type f -name "schema.sql.gz"
+  228  sudo apt install --reinstall zabbix-server-mysql
+  229  dpkg -L zabbix-server-mysql | grep schema.sql.gz
+  230  find /usr/share -type f -name "schema.sql.gz"
+  231  cat /usr/share/zabbix-server-mysql/{schema.sql,images.sql,data.sql} | sudo mysql -u root -p zabbix
+  232  sudo systemctl restart zabbix-server
+  233  sudo apt install zabbix-sql-scripts
+  234  dpkg -L zabbix-sql-scripts | grep '\.sql'
+  235  find /usr/share -type f -name "*.sql"
+  236  cat /chemin/vers/schema.sql /chemin/vers/images.sql /chemin/vers/data.sql | sudo mysql -u root -p zabbix
+  237  ls -l /usr/share/zabbix*
+  238  journalctl -xeu zabbix-server.service | tail -n 30
+  239  gunzip -c /usr/share/zabbix-sql-scripts/mysql/server.sql.gz > /tmp/zabbix_server.sql
+  240  sudo mysql -u root -p zabbix < /tmp/zabbix_server.sql
+  241  mysql -u root -p -e "USE zabbix; SHOW TABLES;"
+  242  mysql -u root -p
+  243  mysql -u roo
+  244  sudo -s
+  245  sudo systemctl restart zabbix-server
+  246  ip a
+  247  sudo systemctl restart zabbix-server
+  248  sudo systemctl zabbix-server
+  249  sudo systemctl status zabbix-server
+  250  history

@@ -1,0 +1,551 @@
+    1  passwd 
+    2  sync
+    3  sudo dnf update -y
+    4  sudo dnf install httpd -y
+    5  sudo systemctl start httpd
+    6  sudo systemctl enable httpd
+    7  sudo systemctl status httpd
+    8  sudo dnf search httpd
+    9  id addr show
+   10  ip addr show
+   11  dir
+   12  ls
+   13  mkdir ~/tp
+   14  ls
+   15  cd TP
+   16  cd tp
+   17  sudo apt-get build-dep apache2
+   18  sudo apt-get build-dep apache2
+   19  ~sudo apt-get build-dep apache2
+   20  sudo apt-get build-dep apache2
+   21  clear
+   22  clr
+   23  rm tp
+   24  ls
+   25  cd ..
+   26  rm tp
+   27  rmdir tp
+   28  ls
+   29  sudo dnf update -y
+   30  sudo dnf groupinstall "Development Tools" -y
+   31  sudo dnf install rpm-build redhat-rpm-config dnf-plugins-core -y
+   32  sudo dnf config-manager --set-enabled powertools
+   33  sudo dnf donwload --source httpd
+   34  sudo dnf download --source httpd
+   35  rpm2cpio httpd-*.src.rpm | cpio -idmv
+   36  mkdi -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPEC,SRPMS}
+   37  mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPEC,SRPMS}
+   38  ls
+   39  cp *.spec ~/rpmbuild/SPECS/
+   40  cp * ~/rpmbuild/SOURCES/
+   41  clear
+   42  rpmbuild -ba ~/rpmbuild/SPECS/httpd.spec
+   43  ls
+   44  cd rpmbuild/
+   45  ls
+   46  cd ..
+   47  cp *.spec ~/rpmbuild/SPEC/
+   48  rpmbuild -ba ~/rpmbuild/SPEC/httpd.spec 
+   49  cp * ~/rpmbuild/SOURCES/
+   50  clear
+   51  rpmbuild -ba ~/rpmbuild/SPEC/httpd.spec 
+   52  cat /etc/rocky-release
+   53  sudo dnf update -y
+   54  ~clear
+   55  clr
+   56  clean
+   57  sudo dnf update -y
+   58  sudo dnf install -y rsyslog
+   59  rsyslogd -v
+   60  sudo systemctl enable rsyslog
+   61  sudo systemctl start rsyslog
+   62  sudo systemctl status rsyslog
+   63  sudo nano /etc/rsyslog.conf
+   64  sudo dnf install -y epel-release
+   65  sudo dnf install -y nano
+   66  sudo nano /etc/rsyslog.conf
+   67  sudo systemctl restart rsyslog
+   68  sudo systemctl status rsyslog
+   69  cd /var/log
+   70  ls
+   71  sudo tail -f /var/log/messages
+   72  sudo nano syslog 
+   73  cd
+   74  sudo hostname set-hostname Nathaniel
+   75  hostnamectl
+   76  sudo hostnamectl set-hostname Nahthaniel
+   77  hostnamectl
+   78  sudo nano /etc/hostname
+   79  sudo nano /etc/hosts
+   80  hostnamectl
+   81  sudo systemctl restart systemd-hostnamed
+   82  sudo systemctl status  systemd-hostnamed
+   83  sudo nano /etct/hosts
+   84  sudo nano /etc/hosts
+   85  sudo hostnamectl set-hostname Nathaniel
+   86  sudo nano /etc/hostname
+   87  sudo systemctl status  systemd-hostnamed
+   88  ping Nathaniel
+   89  ip a
+   90  sudo nano /etc/rsyslog.d/apache-remote.conf
+   91  sudo nano touch /var/log/apache-info.log
+   92  sudo nano touch /var/log/apache-notic.log
+   93  sudo nano touch /var/log/apache-notice.log
+   94  ls -l /var/log/
+   95  cd /var/log/
+   96  ls
+   97  sudo touch apache-info.log
+   98  sudo touch /var/log/apache-info.log
+   99  cd
+  100  sudo touch /var/log/apache-notic.log
+  101  sudo touch /var/log/apache-notice.log
+  102  sudo touch /var/log/apache-info.log
+  103  ls -ld /etc/sudoers.d
+  104  sudo chown root:root /etc/sudoers.d
+  105  ls -ld /etc/sudoers.d
+  106  sudo touch /var/log/apache-notice.log
+  107  sudo touch /var/log/apache-info.log
+  108  ls -l /var/log/
+  109  sudo chown -R root:root /etc/sudoers.d
+  110  sudo chmod 440 /etc/sudoers.d/*
+  111  sudo visudo -c
+  112  su -
+  113  ls -l /etc/sudoers
+  114  chown root:root /etc/sudoers
+  115  chown 440 /etc/sudoers
+  116  ls -l /etc/sudoers
+  117  chown root:root /etc/sudoers.d
+  118  chmod 750 /etc/sudoers.d
+  119  chown root:root /etc/sudoers.d/*
+  120  visudo-c
+  121  visudo -c
+  122  ls -l /etc/sudoers
+  123  chown root:root /etc/sudoers
+  124  ls -l /etc/sudoers
+  125  chmod 440 /etc/sudoers
+  126  ls -l /etc/sudoers
+  127  ls -ld /etc/sudoers.d
+  128  chown root:root /etc/sudoers.d
+  129  chmod 750 /etc/sudoers.d
+  130  ls -ld /etc/sudoers.d
+  131  visudo -c
+  132  sudo whomai
+  133  sudo whoami
+  134  sudo chmod 640 /var/log/apache-*.log
+  135  sudo chown syslog:adm /var/log/apache-*.log
+  136  sudo systemctl restart rsyslog
+  137  [sudo] password for centos: 
+  138  [centos@Nathaniel etc]$ sudo touch /var/log/apache-info.log
+  139  [centos@Nathaniel etc]$ sudo touch /var/log/apache-notice.log
+  140  [centos@Nathaniel etc]$ sudo chmod 640 /var/log/apache-*.log
+  141  [centos@Nathaniel etc]$ sudo chown syslog:adm /var/log/apache-*.log
+  142  chown: invalid user: ‘syslog:adm’
+  143  [centos@Nathaniel etc]$ sudo systemctl restart rsyslog
+  144  [centos@Nathaniel etc]$ sudo systemctl status rsyslog
+  145  ● rsyslog.service - System Logging Service
+  146       Loaded: loaded (/usr/lib/systemd/system/rsyslog.service; enabled; preset: enabled)
+  147       Active: active (running) since Wed 2025-01-15 17:00:25 UTC; 6s ago
+  148         Docs: man:rsyslogd(8)
+  149               https://www.rsyslog.com/doc/
+  150     Main PID: 7621 (rsyslogd)
+  151        Tasks: 9 (limit: 3299611)
+  152       Memory: 3.0M
+  153       CGroup: /system.slice/rsyslog.service
+  154               └─7621 /usr/sbin/rsyslogd -n
+  155  Jan 15 17:00:25 Nathaniel systemd[1]: Starting System Logging Service...
+  156  Jan 15 17:00:25 Nathaniel rsyslogd[7621]: error during parsing file /etc/rsyslog.d/apache-remote.conf, on or before line 1: invalid property 'fromehost-ip' [v8.2412.0-1.el9 try https://www.rsyslog.com/e/2207 ]
+  157  Jan 15 17:00:25 Nathaniel rsyslogd[7621]: [origin software="rsyslogd" swVersion="8.2412.0-1.el9" x-pid="7621" x-info="https://www.rsyslog.com"] start
+  158  Jan 15 17:00:25 Nathaniel systemd[1]: Started System Logging Service.
+  159  Jan 15 17:00:25 Nathaniel rsyslogd[7621]: imjournal: journal files changed, reloading...  [v8.2412.0-1.el9 try https://www.rsyslog.com/e/0 ]
+  160  [centos@Nathaniel etc[B
+  161  sudo systemctl restart rsyslog
+  162  sudo systemctl status rsyslog
+  163  cat /var/log/apache-notice.log
+  164  clear
+  165  ls
+  166  dir
+  167  cd
+  168  cd /
+  169  ls
+  170  cd tmp
+  171  ls
+  172  cd ..
+  173  cd etc
+  174  ls
+  175  clear
+  176  ip -a
+  177  ip a
+  178  sudo nano /etc/rsyslog.conf 
+  179  sudo nano /etc/rsyslog.d/apache-remote.conf 
+  180  sudo chmod 640 /var/log/apache-*.log
+  181  sudo chown syslog:adm /var/log/apache-*.log
+  182  sudo chown Nathaniel /var/log/apache-*.log
+  183  sudo chown Na /var/log/apache-*.log
+  184  clear
+  185  sudo firewall-cmd --add-port=514/tcp --permanent
+  186  cat /var/log/apache-notice.log 
+  187  sudo nano /var/log/apache-notice.log 
+  188  sudo cat /etc/rsyslog.d/apache.conf
+  189  sudo cat /etc/rsyslog.d/apache-remote.conf 
+  190  curl
+  191  curl http://localhost
+  192  sudo cat /var/log/apache-notice.log
+  193  sudo cat /var/log/apache-notic.log
+  194  ip a
+  195  sudo cat /var/log/apache-notice.log
+  196  sudo cat /var/log/apache-notic.log
+  197  sudo cat /etc/rsyslog.d/apache-remote.conf
+  198  sudo touch /var/log/apache-notice.log
+  199  cat /etc/passwd | grep syslog
+  200  sudo chown root:root /var/log/apache-notice.log
+  201  sudo chmod 640 /var/log/apache-notice.log
+  202  ls -l /var/log/apache-notice.log
+  203  sudo systemctl restart rsyslog
+  204  sudo systemctl status rsyslog
+  205  sudo firewall-cmd --list-ports
+  206  rpm -q firewalld
+  207  sudo dnf install -y firewalld
+  208  sudo systemctl start firewalld
+  209  sudo systemctl enable firewalld
+  210  sudo firewall-cmd --add-port=514/tcp --permanent
+  211  sudo firewall-cmd --add-port=514/udp --permanent
+  212  sudo firewall-cmd --reload
+  213  sudo firewall-cmd --list-ports
+  214  ip a
+  215  sudo cat /var/log/apache-notice.log
+  216  sudo tail -f /var/log/apache-notice.log
+  217  clear
+  218  sudo tail -f /var/log/secure
+  219  clear
+  220  sudo nano /etc/rsyslog.d/ssh-remote.conf
+  221  sudo systemctl restart rsyslog
+  222  sudo systemctl status firewalld
+  223  ssh Nathaniel@10.11.29.53
+  224  ssh ubuntu@10.11.29.53
+  225  sudo firewall-cmd --add-port=514/tcp --permanent
+  226  sudo cat /etc/rsyslog.d/apache-remote.conf
+  227  sudo nano /etc/rsyslog.d/apache-remote.conf 
+  228  sudo systemctl restart rsyslog
+  229  sudo tail -f /var/log/secure
+  230  ip a
+  231  telnet 10.11.29.56 514
+  232  sudo ufw reload
+  233  sudo ufw allow 514/tcp
+  234  sudo rpm -Uvh https://repo.zabbix.com/zabbix/6.4/rhel/9/x86_64/zabbix-release-latest-6.4.el9.noarch.rpm
+  235  sudo dnf install zabbix-agent2 
+  236  y
+  237  clear
+  238  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  239  ip a
+  240  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  241  ip a
+  242  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  243  clear
+  244  ip a
+  245  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  246  cd /etc/zabbix/
+  247  ls
+  248  cd zabbix_agent2.d
+  249  ls
+  250  cd plugins.d/
+  251  ls
+  252  cd 
+  253  cd ..
+  254  cd /etc/yum.repos.d/
+  255  ls
+  256  sudo nano epel.repo 
+  257  cd
+  258  sudo dnf update
+  259  sudo dnf update -y
+  260  clear
+  261   rpm -Uvh https://repo.zabbix.com/zabbix/6.4/rhel/9/x86_64/zabbix-release-latest-6.4.el9.noarch.rpm
+  262  dnf clean all
+  263  dnf install zabbix-agent2
+  264  systemctl restart zabbix-agent2
+  265  systemctl enable zabbix-agent2 
+  266  clear
+  267  systemctl status zabbix-agent
+  268  systemctl status zabbix-agent2
+  269  ss -tulnp | grep zabbix
+  270  cat /etc/zabbix/zabbix_agent2.conf | grep -v "^#" | grep -v "^$"
+  271  ip a
+  272  sudo firewall-cmd --list-ports
+  273  sudo firewall-cmd --add-port=10050/tcp --permanent
+  274  sudo firewall-cmd --reload
+  275  nc -zv 10.11.29.53 10050
+  276  wget https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86_64/alpine-standard-3.21.0-x86_64.iso
+  277  adduser
+  278  adduser userfortp5
+  279  passwd userfortp5
+  280  ~
+  281  chmod 0644 /var/db/sudo/lectured
+  282  ls -l /var/db/sudo/lectured
+  283  chmod 0644 /var/db/sudo/lectured
+  284  ls -l /var/db/sudo/lectured
+  285  usermod -aG wheel userfortp5
+  286  groups userfortp5
+  287  exit 
+  288  visudo
+  289  exit 
+  290  chown root:root /usr/bin/sudo
+  291  chown 4755 /usr/bin/sudo 
+  292  ls -l /usr/bin/sudo
+  293  chown root:root /usr/bin/sudo
+  294  chmod 4755 /usr/bin/sudo
+  295  ls -l /usr/bin/sudo
+  296  sudo whoami
+  297  su - userfortp5
+  298  dnf list installed | grep httpd
+  299  systemctl start httpd
+  300  systemctl enable  httpd
+  301  systemctl status httpd
+  302  ip a
+  303  systemctl status httpd
+  304  systemctl stop httpd
+  305  systemctl status httpd
+  306  systemctl start httpd
+  307  systemctl status httpd
+  308  sudo dnf list installed | grep httpd
+  309  sudo systemctl start httpd
+  310  sudo systemctl enable httpd
+  311  sudo systemctl status httpd
+  312  ip a
+  313  sudo systemctl status httpd
+  314  sudo firewall-cmd --list-all
+  315  sudo firewall-cmd --permanent --add-service=http
+  316  sudo firewall-cmd --permanent --add-service=https
+  317  sudo firewall-cmd --reload
+  318  sudo ss -tlnp | grep httpd
+  319  curl -I http://localhost
+  320  curl -I http://10.11.29.56
+  321  ping 10.11.29.56
+  322  ip r
+  323  ls -ld /var/www/html
+  324  sudo chmod -R 755 /var/www/html
+  325  sudo chown -R apache:apache /var/www/html
+  326  sudo chmod -R 755 /var/www/html
+  327  ls -ld /var/www/html
+  328  sudo nano /etc/httpd/conf/httpd.conf
+  329  sestatus
+  330  sudo setenforce 0
+  331  curl -I http://10.11.29.56
+  332  sudo nano /etc/selinux/config
+  333  curl -I http://10.11.29.56
+  334  reboot
+  335  curl -I http://10.11.29.56
+  336  sudo dnf install ~/rpmbuild/RPMS/x86_64/nom_du_paquet.rpm
+  337  sudo tail -n 20 /var/log/apache2/error.log
+  338  sudo tail -n 20 /var/log/httpd/error_log
+  339  systemctl status rsyslog
+  340  clear
+  341  ss -tulpn | grep rsyslog
+  342  hostnamectl
+  343  cat /etc/hostname
+  344  cat /etc/hosts
+  345  cat /etc/rsyslog.d/apache-remote.conf
+  346  ip a
+  347  tail -f /var/log/httpd/access.log
+  348  sudo dnf install rsyslog -y
+  349  sudo systemctl enable --now rsyslog
+  350  sudo nano /etc/hosts
+  351  sudo ls /etc/rsyslog.d/
+  352  sudo nano /etc/rsyslog.d/ssh-remote.conf 
+  353  sudo systemctl restart rsyslog
+  354  sudo dnf install httpd -y
+  355  sudo systemctl enable --now httpd
+  356  curl -I http://localhost
+  357  logger -n 10.11.29.53 -P 10514 "Test depuis $(hostname)"
+  358  whoami
+  359  sudo hostnamectl set-hostname
+  360  sudo hostnamectl set-hostname root
+  361  whoami
+  362  sudo hostnamectl set-hostname root2
+  363  whoami
+  364  sudo hostnamectl set-hostname root
+  365  ls
+  366  cd /etc/hostname 
+  367  ls /etc/hostname 
+  368  ls /etc/ 
+  369  cd /etc/hosts
+  370  sudo nano /etc/hosts
+  371  sudo nano /etc/hostname 
+  372  logger -n 10.11.29.53 -P 514 "Test de log depuis CentOS"
+  373  logger -n 10.11.29.53 -P 514 "Test de log depuis CentOSfefkefkfkekfe"
+  374  logger -n 10.11.29.53 -P 514 "Test de log depuis CentOSfefkefkfke"
+  375  logger -n 10.11.29.53 -P 514 "Test1"
+  376  logger -n 10.11.29.53 -P 514 "Test2"
+  377  logger -n 10.11.29.53 -P 514 "Test3"
+  378  sudo nano /etc/rsyslog.conf 
+  379  sudo systemctl restart rsyslog
+  380  sudo systemctl status rsyslog
+  381  sudo nano /etc/rsyslog.conf 
+  382  sudo systemctl restart rsyslog
+  383  sudo systemctl status rsyslog
+  384  sudo nano /etc/rsyslog.d/ssh-remote.conf 
+  385  sudo systemctl restart rsyslog
+  386  sudo systemctl status rsyslog
+  387  sudo nano /etc/rsyslog.d/ssh-remote.conf 
+  388  sudo systemctl status rsyslog
+  389  sudo systemctl restart rsyslog
+  390  sudo systemctl status rsyslog
+  391  sudo nano /etc/rsyslog.d/ssh-remote.conf 
+  392  sudo systemctl restart rsyslog
+  393  sudo systemctl status rsyslog
+  394  logger "Test de log depuis $(hostname) vers le serveur rsyslog"
+  395  hostnamectl
+  396  sudo hostnamectl set-hostname rocky
+  397  hostnamectl
+  398  sudo systemctl restart rsyslog
+  399  logger "Test de log depuis $(hostname) vers le serveur rsyslog"
+  400  sudo firewall-cmd --reload
+  401  logger "Test de log depuis $(hostname) vers le serveur rsyslog"
+  402  sudo ss -tunlp | grep rsyslog
+  403  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky/Centos"
+  404  sudo journalctl -u rsyslog -f
+  405  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky/Centos"
+  406  sudo firewall-cmd --add-port=514/udp --permanent
+  407  sudo firewall-cmd --add-port=514/tcp --permanent
+  408  sudo firewall-cmd --reload
+  409  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky/Centos"
+  410  sudo tcpdump -i any port 514 -nn
+  411  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky/Centos"
+  412  sudo systemctl restart rsyslog
+  413  clear
+  414  logger -n <IP_UBUNTU> -P 514 "Test depuis Rocky pour syslog"
+  415  clear
+  416  logger -n 10.11.29.53 -P 514 "Test depuis Rocky pour syslog"
+  417  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky/Centos"
+  418  sestatus
+  419  sudo semanage fcontext -a -t syslogd_var
+  420  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky/Centos"
+  421  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky"
+  422  ssh centos@10.11.29.60
+  423  sudo ssh centos@10.11.29.60
+  424  logger -n 10.11.29.53 -P 514 "Test log depuis Rocky"
+  425  sudo nano /etc/rsyslog.d/10-forward.conf
+  426  sudo systemctl restart rsyslog
+  427  sudo hostnamectl set-hostname rocky
+  428  logger "Test depuis $(hostname)"
+  429  ~logger "Test depuis $(hostname)"
+  430  logger "Test depuis $(hostname)"
+  431  logger -n 10.11.29.53 -P 514 "Test direct vers Ubuntu"
+  432  tail -f /var/log/remote/*.log
+  433  sudo tail -f /var/log/remote/*.log
+  434  sudo hostnamectl set-hostname rocky
+  435  sudo nano /etc/hostname
+  436  sudo nano /etc/hosts
+  437  sudo systemctl restart systemd-hostnamed
+  438  sudo nano /etc/rsyslog.d/apache-remote.conf
+  439  sudo systemctl restart rsyslog
+  440  sudo systemctl status rsyslog
+  441  hostnamectl
+  442  sudo dnf install httpd -y
+  443  sudo systemctl enable --now httpd
+  444  curl -I http://localhost
+  445  ls /var/log/remote/centos/
+  446  logger "Test depuis rocky23:09"
+  447  logger -n 10.11.29.53 -P 514 "Test via TCP,depuis rocky23:10"
+  448  clear
+  449  hostnamectl
+  450  cat /etc/hostname
+  451  cat /etc/hosts
+  452  sudo nano /etc/hosts
+  453  sudo hostnamectl set-hostname rocky
+  454  sudo systemctl restart rsyslog
+  455  hostnamectl
+  456  logger -n 10.11.29.53 -P 514 "Test via TCP,depuis rocky23:26"
+  457  logger "Test depuis rocky23:26"
+  458  logger -n 10.11.29.53 -P 514 "Test via TCP,depuis rocky23:26"
+  459  clear
+  460  sudo dnf install zabbix-agent2 -y
+  461  sudo systemctl enable --now zabbix-agent2
+  462  sudo systemctl status zabbix-agent2
+  463  sudo nano /etc/zabbix/zabbix_agent2.conf
+  464  sudo tail -f /var/log/zabbix/zabbix_agent2.log
+  465  sudo firewall-cmd --permanent --add-port=10050/tcp
+  466  sudo systemctl status zabbix-agent2
+  467  sudo systemctl restart zabbix-agent2
+  468  clear
+  469  sudo systemctl status zabbix-agent2
+  470  sudo firewall-cmd --permanent --add-port=10050/tcp
+  471  sudo firewall-cmd --reload
+  472  sudo setsebool -P zabbix_can_network on
+  473  sudo rpm -ivh https://repo.zabbix.com/zabbix/6.4/rhel/9/x86_64/zabbix-release-6.4-1.el9.noarch.rpm
+  474  sudo dnf clean all
+  475  sudo dnf install zabbix-agent2
+  476  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  477  sudo systemctl start zabbix-agent2
+  478  sudo systemctl status zabbix-agent2
+  479  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  480  sudo dnf install -y net-snmp net-snmp-utils
+  481  sudo systemctl enable --now snmpd
+  482  sudo systemctl status snmpd
+  483  sudo nano /etc/snmp/snmpd.conf
+  484  sudo systemctl restart snmpd
+  485  sudo systemctl status snmpd
+  486  sudo nano /etc/snmp/snmpd.conf
+  487  sudo ss -tulpn | grep snmpd
+  488  sudo nano /etc/hosts~
+  489  sudo nano /etc/hosts
+  490  ping -c 3 rocky
+  491  ping -c 3 centos
+  492  ping -c 3 zabbix-server
+  493  sudo dnf install -y net-snmp net-snmp-utils
+  494  sudo systemctl enable --now snmpd
+  495  sudo systemctl status snmpd
+  496  sudo nano /etc/snmp/snmpd.conf
+  497  sudo systemctl restart snmpd
+  498  sudo ss -tulpn | grep snmpd
+  499  sudo tail -f /var/log/snmpd.log
+  500  sudo nano /etc/zabbix/zabbix_agentd.conf
+  501  sudo nano /etc/zabbix/zabbix_agent2.conf
+  502  sudo systemctl status zabbix-agent
+  503  sudo systemctl status zabbix-agent2
+  504  sudo systemctl restart zabbix-agent
+  505  sudo systemctl restart zabbix-agent2
+  506  sudo systemctl status zabbix-agent
+  507  sudo systemctl status zabbix-agent2
+  508  sudo tail -f /var/log/zabbix/zabbix_agentd.log
+  509  sudo tail -f /var/log/zabbix/zabbix_agent2.log
+  510  sudo nano /etc/zabbix/zabbix_agentd.conf
+  511  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  512  sudo systemctl restart zabbix-agent2
+  513  ip a
+  514  systemctl status zabbix-agent
+  515  systemctl status zabbix-agent2
+  516  sudo /etc/zabbix/zabbix_agent2.conf 
+  517  sudon nano /etc/zabbix/zabbix_agent2.conf 
+  518  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  519  sudo cd /etc/zabbix/
+  520  ls
+  521  sudo cd /etc/zabbix/
+  522  cd
+  523  cd /etc/
+  524  cd zabbix/
+  525  ls
+  526  cd zabbix_agent2.d/
+  527  ls
+  528  cd 
+  529  sudo nano /etc/zabbix/zabbix_agent2.conf 
+  530  sudo systemctl status apache
+  531  sudo systemctl status apache2
+  532  sudo systemctl status apache
+  533  cd /etc/
+  534  ls
+  535  cd ..
+  536  cd
+  537  ls
+  538  sudo systemctl start apache
+  539  sudo systemctl start apache.services
+  540  sudo systemctl start apache.service
+  541  sudo systemctl restart apache2
+  542  cd apachectl.sh 
+  543  ls
+  544  clear
+  545  rpm -q httpd
+  546  systemctl list-units --type=service | grep httpd
+  547  sudo systemctl start httpd
+  548  sudo systemctl enable httpd
+  549  sudo systemctl status httpd
+  550  sudo dnf install -y httpd
+  551  history
