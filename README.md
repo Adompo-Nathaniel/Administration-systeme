@@ -1,15 +1,20 @@
 # Administration Système
 
-Ce cours explore les fondamentaux de l'administration système sous différents environnements, principalement Linux et Windows. Il a permis d'acquérir des compétences essentielles pour gérer, configurer et sécuriser un système informatique.
+Porte sur les fondamentaux de l’administration système, couvrant l’installation, la gestion et la supervision des systèmes informatiques, en mettant l’accent sur la gestion des logs, le déploiement et la tolérance aux pannes.
 
 ## Notions abordées
-- Gestion des utilisateurs et des permissions
-- Installation et configuration des services essentiels (SSH, Apache, etc.)
-- Gestion des processus et supervision système
-- Automatisation des tâches avec des scripts Bash
-- Sécurité et gestion des droits d'accès
-- Gestion des logs et surveillance système
-- Virtualisation et conteneurisation (Docker, VMware)
+- Installation de paquets.
+- Gestion de logs.
+- Outils de supervision et de métrologie.
+- Déploiement de machines sur un réseau (boot PXE, TFTP...).
+- Démarrage du système (systemd, SysV init).
+- Récupération d’un système (BIOS, UEFI, GRUB, single user).
+- Gestion de volumes logiques (LVM).
+- Tolérance aux défaillances d’une unité de stockage (RAID logiciel).
+
+## Objectifs
+- Maîtriser les aspects de base de l’administration système.
+- Introduction aux outils de supervision et de métrologie.
 
 ## Description
 
